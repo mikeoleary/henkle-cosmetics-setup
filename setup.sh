@@ -14,3 +14,7 @@ sudo chmod
 mkdir henkle-cosmetics
 cd henkle-cosmetics
 # download the compose YAML file to this location
+curl -L "https://raw.githubusercontent.com/mikeoleary/henkle-cosmetics-setup/main/docker-compose.yaml" -o docker-compose.yaml
+docker-compose up -d
+
+
