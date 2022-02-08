@@ -1,3 +1,4 @@
+# My main reference guide was this article: https://www.cloudsavvyit.com/12978/how-to-quickly-deploy-wordpress-as-a-docker-container/
 
 # Deployed Ubuntu 20.04 VM in Azure
 
