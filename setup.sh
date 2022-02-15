@@ -11,6 +11,7 @@ docker pull wordpress:php8.1-apache
 #install Docker Compose
 sudo curl -L "https://github.com/docker/compose/releases/download/v2.2.3/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 sudo chmod
+sudo chmod +x /usr/local/bin/docker-compose
 
 mkdir henkle-cosmetics
 cd henkle-cosmetics
