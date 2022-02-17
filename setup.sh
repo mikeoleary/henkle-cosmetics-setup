@@ -3,7 +3,7 @@
 # Deployed Ubuntu 20.04 VM in Azure
 
 sudo apt-get update
-sudo apt-get install docker.io
+sudo apt-get install docker.io -y
 sudo usermod -aG docker $USER         #add current user to docker group
 newgrp docker                         #apply changes to group membership so regular user can run docker commands
 docker pull wordpress:php8.1-apache
