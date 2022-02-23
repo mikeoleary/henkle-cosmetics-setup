@@ -35,6 +35,9 @@ sudo cp -r /tmp/mysql/henkle-cosmetics_mysql /var/lib/docker/volumes/
 sudo rm -rf /var/lib/docker/volumes/henkle-cosmetics_wordpress/
 sudo cp -r /tmp/wordpress/henkle-cosmetics_wordpress /var/lib/docker/volumes/
 
+## you should CHANGE OWNER back to www-data for the wordpress volume if you want wordpress to be able to do things like install plugins
+sudo chown www-data:www-data -R /var/lib/docker/volumes/henkle-cosmetics_wordpress/_data/*
+
 #START THE CONTAINERS AGAIN
 docker-compose start mysql
 docker-compose start wordpress
