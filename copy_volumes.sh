@@ -38,3 +38,8 @@ sudo cp -r /tmp/wordpress/henkle-cosmetics_wordpress /var/lib/docker/volumes/
 #START THE CONTAINERS AGAIN
 docker-compose start mysql
 docker-compose start wordpress
+
+#START THE REMOTE CONTAINERS
+ssh $OLD_VM_USER@$OLD_VM_IP 'cd ~/henkle-cosmetics && docker-compose start mysql'
+ssh $OLD_VM_USER@$OLD_VM_IP 'cd ~/henkle-cosmetics && docker-compose start wordpress'
+
